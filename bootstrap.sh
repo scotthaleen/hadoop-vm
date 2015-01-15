@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-
-printf "Setup \e[0;36mLinux\e[0m \n"
-
 ## repos
 . /vagrant/provision/java-repo.sh
 
@@ -11,10 +8,16 @@ curl -s http://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/archive.key | s
 
 apt-get -y update
 apt-get -y upgrade
+apt-get install git
+
+mkdir -p /srv/software
 
 . /vagrant/provision/java.sh
 
 . /vagrant/provision/hadoop.sh 
 
-apt-get install git
+. /vagrant/provision/gradle.sh
+
+. /vagrant/provision/spark.sh
+
 
