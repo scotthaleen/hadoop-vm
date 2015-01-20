@@ -8,7 +8,7 @@ curl -s http://archive.cloudera.com/cdh5/ubuntu/trusty/amd64/cdh/archive.key | s
 
 apt-get -y update
 apt-get -y upgrade
-apt-get install git
+apt-get -y install git
 
 mkdir -p /srv/software
 

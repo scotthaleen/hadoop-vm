@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-sudo apt-get install gradle
+sudo apt-get -y install gradle
 
 
 if [[ ! -d /usr/lib/jvm/default-java ]]; then
