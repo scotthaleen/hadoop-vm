@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+grub-install /dev/sda
+apt-get -y install curl
 
 ## repos
 . /vagrant/provision/java-repo.sh
