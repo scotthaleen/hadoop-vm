@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-grub-install /dev/sda
+sudo update-grub
+#grub-install /dev/sda
 apt-get -y install curl
 
 ## repos
